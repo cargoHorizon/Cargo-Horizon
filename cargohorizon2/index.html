@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cargo Horizon</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="image/CargoHorizonLogo2.3 1.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <img src="image/CargoHorizonLogo2.3 1.png" alt="" class="logo">
+        <ul class="nav-bar">
+            <li class="home">Home</li>
+            <li class="about-us">About Us</li>
+            <li class="features">Features</li>
+            <li class="pricing">Pricing</li>
+            <li class="burger"><img src="image/Component 13.png" alt=""></li>
+        </ul>
+    </header>
+    <div class="cargo">
+        <img src="image/Menu.png" alt="" class="cargo-burger">
+        <p class="cargo-text">Cargo</p>
+    </div>
+    <div class="flex">
+        <sidebar class="burger-menu">
+            <ul class="menu">
+                <li class="one"><img src="image/darhboard.png" alt=""><p>Dashboard</p></li>
+                <li class="one" id="cargo-one" onclick="cargoFunction()"><img src="image/Box_alt.png" alt=""><p>Cargo</p></li>
+                <li class="one"><img src="image/Group.png" alt=""><p>Team</p></li>
+                <li class="one" id="track-one" onclick="mapFunction()"><img src="image/Map.png" alt=""><p>Track Map</p></li>
+            </ul>
+        </sidebar>
+        <div class="main">
+            <div class="filter-components">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search">
+                    <img src="image/search-normal.png" width="27" height="27">
+                </div>
+                <div class="Quick-settings">
+                    <div><img src="image/setting-3.png">Quick Settings <img src="" alt=""></div>
+                    <div><img src="image/radio_button_unchecked.png">Smart Notifications</div>
+                    <div><img src="image/radio_button_checked.png">Post Live Update</div>
+                    <button class="arrow-1-btn"><img src="image/Vector 9.png" width="20" height="10" class="arrow-1"></button>
+                </div>
+                <div class="Filter-settings">
+                    <div><img src="image/Filter_alt.png" width="27" height="27">Filter Settings</div>
+                    <div><img src="image/radio_button_checked.png" width="25" height="25"><input type="text" name="city" list="cityname" class="city">
+                        <datalist id="cityname">
+                            <option value="Wisconsin">
+                            <option value="Florida">
+                            <option value="Missouri">
+                        </datalist><img src="image/Group 633054.png"><input type="text" name="city" list="cityname" class="city">
+                        <datalist id="cityname">
+                            <option value="Wisconsin">
+                            <option value="Florida">
+                            <option value="Missouri">
+                        </datalist>
+                    </div>
+                    <div><img src="image/radio_button_checked.png" width="24" height="24">Truck Type: <input type="text" name="city" class="city"></div>
+                    <button class="arrow-2-btn"><img src="image/Vector 9.png" width="20" height="10" class="arrow-2"></button>
+                </div>
+            </div>
+            <div class="statemant-section">
+                <div class="full-statemant">
+                <div class="container-1">
+                    <img src="image/Group 633055.png" width="38" height="38" class="container-1-img">
+                    <div class="container-1-elements">
+                        <div>
+                            <p>From: Wisconsin 54555</p><br>
+                            <p>To: Ripon 54971</p>
+                        </div>
+                        <div>
+                            <p>Pick up at:</p><br>
+                            <p class="box">PHILLIPS,5455</p>
+                        </div>
+                        <div>
+                            <p>Pick up Date:</p><br>
+                            <p class="box">05/18/2024 15:30</p>
+                        </div>
+                    </div>
+                    <div class="container-2-elements">
+                        <div class="detail">
+                            <img src="image/Sort list.png" width="24" height="24">
+                            <span>Dock Level:No</span>
+                        </div>
+                        <div class="detail">
+                            <img src="image/Subtract.png" width="24" height="24">
+                            <span>Dims: 27x42x24in</span>
+                        </div>
+                    </div>
+                    <div class="container-3-elements">
+                        <img src="image/package_car.png" width="24" height="24">
+                        <span>Suggested Truck Size:<br>CARGO VAN</span>
+                    </div>
+                    <img src="image/Vector 9.png" class="arrow-3">
+                </div>
+                <div class="details-full">
+                    <div class="container-2">
+                        <div class="container-2-header">
+                            <div>Cargo Details</div>
+                            <img src="image/Sort.png" width="37" height="37">
+                        </div>
+                        <div class="container-2-details">
+                            <div class="grid">
+                                <img src="image/Pressure.png" width="30" height="30">
+                                <div>Miles:195</div>
+                            </div>
+                            <div class="grid">
+                                <img src="image/Arhive_alt_add_fill.png" width="30" height="30">
+                                <div>Pieces:1</div>
+                            </div>
+                            <div class="grid">
+                                <img src="image/Done.png" width="30" height="30">
+                                <div>Weight: 920</div>
+                            </div>
+                            <div class="grid">
+                                <img src="image/Atom_fill.png" width="30" height="30">
+                                <div>Hazardous: No</div>
+                            </div>
+                            <div class="grid">
+                                <img src="image/Arhive_load_duotone.png" width="30" height="30">
+                                <div>Stackable: No</div>
+                            </div>
+                            <div class="grid">
+                                <img src="image/Sign_in.png" width="30" height="30">
+                                <div>FAST Load: No</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-3">
+                        <div class="contaiener-details">
+                            <div class="container-3-header">
+                                <div>Broker Details</div>
+                                <img src="image/Sort.png" width="37" height="37">
+                            </div>
+                            <div class="container-3-gmail">
+                                <img src="image/E-mail.png" width="24" height="24">
+                                <div>randommail@gmail.com</div>
+                            </div>
+                            <div class="container-3-phone">
+                                <img src="image/Phone_fill.png" width="24" height="24">
+                                <div>1-800-463-3339</div>
+                            </div>
+                        </div>
+                        <button class="btn-2">Add to Chat</button>
+                        <button class="btn-3">Bid</button>
+                        <div class="div-text">$500</div>
+                    </div>
+                </div>
+                </div>
+                <div class="container-4">
+                    <img src="image/check_ring_round.png" width="38" height="38" class="container-1-img">
+                    <div class="container-1-elements">
+                        <div>
+                            <p>From: Wisconsin 54555</p><br>
+                            <p>To: Ripon 54971</p>
+                        </div>
+                        <div>
+                            <p>Pick up at:</p><br>
+                            <p class="box">PHILLIPS,5455</p>
+                        </div>
+                        <div>
+                            <p>Pick up Date:</p><br>
+                            <p class="box">05/18/2024 15:30</p>
+                        </div>
+                    </div>
+                    <div class="container-2-elements">
+                        <div class="detail">
+                            <img src="image/Sort list.png" width="24" height="24">
+                            <span>Dock Level:No</span>
+                        </div>
+                        <div class="detail">
+                            <img src="image/Info_fill.png" width="24" height="24">
+                            <span>Dims: 27x42x24in</span>
+                        </div>
+                    </div>
+                    <div class="container-3-elements">
+                        <img src="image/package_car.png" width="24" height="24">
+                        <span>Suggested Truck Size:<br>CARGO VAN</span>
+                    </div>
+                    <img src="image/Vector 9.png">
+                </div>
+                <div class="container-5">
+                    <img src="image/Refresh.png" width="38" height="38" class="container-1-img">
+                    <div class="container-1-elements">
+                        <div>
+                            <p>From: Wisconsin 54555</p><br>
+                            <p>To: Ripon 54971</p>
+                        </div>
+                        <div>
+                            <p>Pick up at:</p><br>
+                            <p class="box">PHILLIPS,5455</p>
+                        </div>
+                        <div>
+                            <p>Pick up Date:</p><br>
+                            <p class="box">05/18/2024 15:30</p>
+                        </div>
+                    </div>
+                    <div class="container-2-elements">
+                        <div class="detail">
+                            <img src="image/Sort list.png" width="24" height="24">
+                            <span>Dock Level:No</span>
+                        </div>
+                        <div class="detail">
+                            <img src="image/Info_fill.png" width="24" height="24">
+                            <span>Dims: 27x42x24in</span>
+                        </div>
+                    </div>
+                    <div class="container-3-elements">
+                        <img src="image/package_car.png" width="24" height="24">
+                        <span>Suggested Truck Size:<br>CARGO VAN</span>
+                    </div>
+                    <img src="image/Vector 9.png">
+                </div>
+            </div>
+            <div class="track-map-section">
+                <div class="container-4">
+                    <img src="image/check_ring_round.png" width="38" height="38" class="container-1-img">
+                    <div class="container-1-elements">
+                        <div>
+                            <p>From: Wisconsin 54555</p><br>
+                            <p>To: Ripon 54971</p>
+                        </div>
+                        <div>
+                            <p>Pick up at:</p><br>
+                            <p class="box">PHILLIPS,5455</p>
+                        </div>
+                        <div>
+                            <p>Pick up Date:</p><br>
+                            <p class="box">05/18/2024 15:30</p>
+                        </div>
+                    </div>
+                    <div class="container-2-elements">
+                        <div class="detail">
+                            <img src="image/Sort list.png" width="24" height="24">
+                            <span>Dock Level:No</span>
+                        </div>
+                        <div class="detail">
+                            <img src="image/Info_fill.png" width="24" height="24">
+                            <span>Dims: 27x42x24in</span>
+                        </div>
+                    </div>
+                    <div class="container-3-elements">
+                        <img src="image/package_car.png" width="24" height="24">
+                        <span>Suggested Truck Size:<br>CARGO VAN</span>
+                    </div>
+                </div>
+                <div class="details-full-2">
+                    <div class="container-2">
+                        <div class="container-2-header">
+                            <div>Cargo Details</div>
+                            <img src="image/Sort.png" width="37" height="37">
+                        </div>
+                        <div class="container-2-details">
+                            <div class="grid">
+                                <img src="image/Pressure.png" width="30" height="30">
+                                <div>Miles:195</div>
+                            </div>
+                            <div class="grid">
+                                <img src="image/Arhive_alt_add_fill.png" width="30" height="30">
+                                <div>Pieces:1</div>
+                            </div>
+                            <div class="grid">
+                                <img src="image/Done.png" width="30" height="30">
+                                <div>Weight: 920</div>
+                            </div>
+                            <div class="grid">
+                                <img src="image/Atom_fill.png" width="30" height="30">
+                                <div>Hazardous: No</div>
+                            </div>
+                            <div class="grid">
+                                <img src="image/Arhive_load_duotone.png" width="30" height="30">
+                                <div>Stackable: No</div>
+                            </div>
+                            <div class="grid">
+                                <img src="image/Sign_in.png" width="30" height="30">
+                                <div>FAST Load: No</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-3">
+                        <div class="contaiener-details">
+                            <div class="container-3-header">
+                                <div>Broker Details</div>
+                                <img src="image/Sort.png" width="37" height="37">
+                            </div>
+                            <div class="container-3-gmail">
+                                <img src="image/E-mail.png" width="24" height="24">
+                                <div>randommail@gmail.com</div>
+                            </div>
+                            <div class="container-3-phone">
+                                <img src="image/Phone_fill.png" width="24" height="24">
+                                <div>1-800-463-3339</div>
+                            </div>
+                        </div>
+                        <button id="btn-same">Add to Chat</button>
+                        <div class="div-text">$500</div>
+                    </div>
+                </div>
+                <p class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11920.928789641803!2d44.89204025!3d41.67232845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sge!4v1721222464528!5m2!1sen!2sge" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
