@@ -107,6 +107,9 @@ let cargoOne = document.querySelector('#cargo-one');
 let truckOne = document.querySelector('#track-one');
 let statemantSection = document.querySelector('.statemant-section');
 let trackMapSection = document.querySelector('.track-map-section');
+let trackMapText = document.querySelector('.track-map-text');
+let cargoText = document.querySelector('.cargo-text');
+
 
 if(p == 1){
     cargoOne.style.marginLeft = '20px';
@@ -123,6 +126,10 @@ function cargoFunction(){
     trackMapSection.style.scale = '0';
     trackMapSection.style.transition = '0.5s';
     trackMapSection.style.pointerEvents = 'none';
+    trackMapText.style.opacity = '0';
+    cargoText.style.opacity = '1';
+    trackMapText.style.transition = '0.2s';
+    cargoText.style.transition = '0.2s';
 }
 function mapFunction(){
     cargoOne.style.marginLeft = '0px';
@@ -134,4 +141,50 @@ function mapFunction(){
     statemantSection.style.transition = '0.5s';
     trackMapSection.style.transition = '0.5s';
     trackMapSection.style.pointerEvents = 'auto';
+    trackMapText.style.opacity = '1';
+    cargoText.style.opacity = '0';
+    trackMapText.style.transition = '0.2s';
+    cargoText.style.transition = '0.2s';
 }
+
+
+let arrow4 = document.querySelector('.arrow-4');
+let details3 = document.querySelector('.details-full-3');
+
+let q = 0;
+arrow4.onclick = () =>{
+    q++;
+    if(q % 2 == 1){
+        details3.style.height = '178px';
+        details3.style.transition = '0.2s';
+        details3.style.marginTop = '30px';
+        arrow4.style.transform = 'rotate(180deg)';
+        
+    }else{
+        details3.style.height = '0px';
+        details3.style.transition = '0.2s';
+        details3.style.marginTop = '0px';
+        arrow4.style.transform = 'rotate(0deg)';
+    }
+}
+
+let arrow5 = document.querySelector('.arrow-5');
+let details4 = document.querySelector('.details-full-4');
+
+let w = 0;
+arrow5.onclick = () =>{
+    w++;
+    if(w % 2 == 1){
+        details4.style.height = '178px';
+        details4.style.transition = '0.2s';
+        details4.style.marginTop = '30px';
+        arrow5.style.transform = 'rotate(180deg)';
+        
+    }else{
+        details4.style.height = '0px';
+        details4.style.transition = '0.2s';
+        details4.style.marginTop = '0px';
+        arrow5.style.transform = 'rotate(0deg)';
+    }
+}
+
