@@ -142,7 +142,7 @@ header {
 .one:hover{
     background-color: #bb951b;
     transition: 0.2s;
-    margin-left: 20px;
+    /* margin-left: 20px; */
     box-shadow:2px 2px 3px #755d0f;
 }
 .main{
